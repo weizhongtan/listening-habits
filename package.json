@@ -1,0 +1,19 @@
+{
+  "name": "listening-habits",
+  "version": "0.0.1",
+  "description": "Data visualisation of last.fm listening habits",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weizhongtan/listening-habits.git"
+  },
+  "author": "Wei-Zhong Tan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weizhongtan/listening-habits/issues"
+  },
+  "homepage": "https://github.com/weizhongtan/listening-habits#readme"
+}

@@ -1,0 +1,104 @@
+ul.list {
+  position: relative;
+  width: 100%;
+}
+ul.list li {
+  list-style: none;
+  display: inline;
+  width: 100%;
+  height: 100%;
+}
+ul.list li div.date-container, ul.list li div.artist-container {
+  display: inline-block;
+  width: 33%;
+  border: 1px solid;
+}
+ul.list li div.img-container {
+  display: inline-block;
+}
+ul.list li div.img-container img {
+  height: 80px;
+}
+ul.list li div.artist-container {
+  padding: 10px;
+}
+
+.jan {
+  background: #ffffff;
+  color: #737373;
+}
+
+.feb {
+  background: #f2f2f2;
+  color: #737373;
+}
+
+.mar {
+  background: #e6e6e6;
+  color: #737373;
+}
+
+.apr {
+  background: #d9d9d9;
+  color: #737373;
+}
+
+.may {
+  background: #cccccc;
+  color: #737373;
+}
+
+.jun {
+  background: #bfbfbf;
+  color: #737373;
+}
+
+.jul {
+  background: #b3b3b3;
+  color: #ffffff;
+}
+
+.aug {
+  background: #a6a6a6;
+  color: #ffffff;
+}
+
+.sep {
+  background: #999999;
+  color: #ffffff;
+}
+
+.oct {
+  background: #8c8c8c;
+  color: #ffffff;
+}
+
+.nov {
+  background: #808080;
+  color: #ffffff;
+}
+
+.dec {
+  background: #737373;
+  color: #ffffff;
+}
+
+.y2016 {
+  background: #ffffff;
+}
+
+.y2015 {
+  background: #f2f2f2;
+}
+
+.y2014 {
+  background: #e6e6e6;
+}
+
+.y2013 {
+  background: #d9d9d9;
+}
+
+.y2012 {
+  background: #cccccc;
+}

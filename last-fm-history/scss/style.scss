@@ -1,0 +1,122 @@
+ul.list {
+  position: relative;
+  width: 100%;
+  
+  li {
+    list-style: none;
+    display: inline;
+    width: 100%;
+    height: 100%;
+    
+    div.date-container {
+      display: inline-block;
+      width: 33%;
+      border: 1px solid;
+    }
+    
+    div.img-container {
+      display: inline-block;
+      img {
+        height: 80px;
+      }
+    }
+    
+    div.artist-container {
+      @extend .date-container;
+      padding: 10px;
+    }
+  }
+}
+
+$shade0: #ffffff;
+$shade1: #f2f2f2;
+$shade2: #e6e6e6;
+$shade3: #d9d9d9;
+$shade4: #cccccc;
+$shade5: #bfbfbf;
+$shade6: #b3b3b3;
+$shade7: #a6a6a6;
+$shade8: #999999;
+$shade9: #8c8c8c;
+$shade10: #808080;
+$shade11: #737373;
+
+.jan {
+  background: $shade0;
+  color: $shade11;
+}
+
+.feb {
+  background: $shade1;
+  color: $shade11;
+}
+
+.mar {
+  background: $shade2;
+  color: $shade11;
+}
+
+.apr {
+  background: $shade3;
+  color: $shade11;
+}
+
+.may {
+  background: $shade4;
+  color: $shade11;
+}
+
+.jun {
+  background: $shade5;
+  color: $shade11;
+}
+
+.jul {
+  background: $shade6;
+  color: $shade0;
+}
+
+.aug {
+  background: $shade7;
+  color: $shade0;
+}
+
+.sep {
+  background: $shade8;
+  color: $shade0;
+}
+
+.oct {
+  background: $shade9;
+  color: $shade0;
+}
+
+.nov {
+  background: $shade10;
+  color: $shade0;
+}
+
+.dec {
+  background: $shade11;
+  color: $shade0;
+}
+
+.y2016 {
+  background: $shade0;
+}
+
+.y2015 {
+  background: $shade1;
+}
+
+.y2014 {
+  background: $shade2;
+}
+
+.y2013 {
+  background: $shade3;
+}
+
+.y2012 {
+  background: $shade4;
+}
