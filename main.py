@@ -11,14 +11,22 @@ params = {
     'format': 'json'
 }
 
+# ['name', 'playcount', 'listeners', 'mbid', 'url', 'streamable', 'image']
+
 resp = requests.get(url=url, params=params)
-data = resp.json() # Check the JSON Response Content documentation below
-things = map(lambda x: json.loads(x), data.get('artists'))
+json_data = resp.text # Check the JSON Response Content documentation below
+data_dict = json.loads(json_data)
+artists = data_dict['artists']['artist']
 
-for ch in things:
-    print(ch)
+artist_names = map(lambda x: x['name'], artists)
+artist_playcounts = map(lambda x: int(x['playcount']), artists)
 
-bar_chart = pygal.Bar()
-# bar_chart.add('test' )
-# Save the svg to a file
-# bar_chart.render_to_file('bar_chart.svg')
+for n in artist_playcounts:
+    print(n)
+
+bar_chart = pygal.HorizontalBar()
+bar_chart.title = 'The best bar chart'
+for artist in artists:
+    bar_chart.add(artist['name'], int(artist['playcount']))
+
+bar_chart.render_to_file('bar_chart.svg')
